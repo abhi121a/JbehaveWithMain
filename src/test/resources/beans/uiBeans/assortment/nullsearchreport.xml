@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>REASON STATUS</keyword>
+            <element_locator_value>//select[@class='btn btn-primary dropdown-toggle ng-pristine ng-valid ng-touched']</element_locator_value>
+        </selector>
+
+
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>className</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SEARCH</keyword>
+            <element_locator_value>//button[@class='btn btn-success'][text()='Search']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xapth</element_locator_type>
+            <keyword>PAGE-NO</keyword>
+            <element_locator_value>//li[@class='pagination-page ng-scope']/a[text()="_##_"]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CALENDER</keyword>
+            <element_locator_value>//button[@class='md-datepicker-triangle-button md-icon-button md-button md-default-theme']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DATE</keyword>
+            <element_locator_value>//td[contains(@id,'2015-11-17')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>FRAME</keyword>
+            <element_locator_value>//div[@id='md-date-pane2']</element_locator_value>
+        </selector>
+
+
+    </Element>
+
+    <Element type="text">
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SEARCHQUERYTABLE</keyword>
+            <element_locator_value>//table[@class='table table-striped table-bordered']/tbody/</element_locator_value>
+            <!--tr/td[text()='']-->
+        </selector>
+    </Element>
+
+</UIElements>

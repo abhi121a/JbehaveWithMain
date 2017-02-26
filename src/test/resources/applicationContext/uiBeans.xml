@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                  
+	
+	<!-- Read any values directly from Properties file-->
+	<bean id="uiElementLocator" class="org.testing.framework.model.UIModels.WebElementsModel" parent="uiElementLocatorParent">
+		<property name="urlMap">
+			<map merge="false">
+				<entry key="Panels_URL"	value="${panel.url}" />
+                <entry key="Assortment_URL"	value="${assortment.url}" />
+			</map>
+		</property>
+
+		<property name="loadTimeout">
+			<map merge="false">
+				<entry key="SISAjaxLoader" value="${ajax.busy.identifier}" />
+			</map>
+		</property>
+	</bean>
+
+
+
+    <!-- These beans create the links to the xml file to be used in the locations of elements -->
+
+	<bean id="loginBeanFilePath" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/login.xml"/>
+	</bean>
+
+	<bean id="homepageBeanFilePath" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/homepage.xml"/>
+	</bean>
+
+	<bean id="clusterManageBeanFilePath" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/manage_cluster.xml"/>
+	</bean>
+
+	<bean id="subcatRuleBeanFilePath" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/subcatrule.xml"/>
+	</bean>
+	<bean id="PriceRuleBeanFilePath" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/price_rule.xml"/>
+	</bean>
+
+	<bean id="productManageExceptionPage" class="org.testing.framework.model.UIModels.BeanFilePath">
+		<property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/ps/manage_product.xml"/>
+	</bean>
+
+    <bean id="nullSearchReportSteps" class="org.testing.framework.model.UIModels.BeanFilePath">
+        <property name="beanFilePath" value="${project.build.outputDirectory}/beans/uiBeans/assortment/mapping.xml"/>
+    </bean>
+
+
+
+</beans>

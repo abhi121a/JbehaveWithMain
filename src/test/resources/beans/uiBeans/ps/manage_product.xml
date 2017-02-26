@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+
+
+        <!--Rules Exception page text box-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>TEXTBOX</keyword>
+            <element_locator_value>//textarea[@name='supclist']</element_locator_value>
+        </selector>
+
+        <!--Rules Exception page Offer price input box-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>OFFER PRICE</keyword>
+            <element_locator_value>//tr[@id='_##_']//input[@class='OP']</element_locator_value>
+        </selector>
+
+        <!--Rules Exception page CM limit input text box-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CM LIMITS</keyword>
+            <element_locator_value>//tr[@id='_##_']//input[@class='CML']</element_locator_value>
+        </selector>
+
+
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>className</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ADD_BUTTON</keyword>
+            <element_locator_value>//input[@value="Add"]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CHOOSE</keyword>
+            <element_locator_value>//input[@class='button button_grey browse' and @name='file']</element_locator_value>
+        </selector>
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPLOAD</keyword>
+            <element_locator_value>//input[@class='button button_green savetemp' and @value='Upload']</element_locator_value>
+        </selector>
+
+        <!--Rules Excepiton page Update button -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPDATE</keyword>
+            <element_locator_value>//tr[@id='_##_']//span[@class='button button_green updateproduct']</element_locator_value>
+        </selector>
+
+        <!--Rules Excepiton page Delete button -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DELETE</keyword>
+            <element_locator_value>//tr[@id='_##_']//span[@class='button button_pink deleteproduct']</element_locator_value>
+        </selector>
+
+        <!--Rules Excepiton page UPDATE ALL button -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPDATE ALL</keyword>
+            <element_locator_value>//span[@class='button button_green updateallproduct']</element_locator_value>
+        </selector>
+
+        <!--Rules Excepiton page UPDATE ALL button -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DOWNLOAD DATA</keyword>
+            <element_locator_value>//input[@id='filedownload_0']</element_locator_value>
+        </selector>
+
+
+
+
+
+    </Element>
+
+    <Element type="text">
+    <!--Below element is to find the added Exception in manage product page-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ADDEDEXCEPTION</keyword>
+            <element_locator_value>//tr[@id='_##_']//td[contains(text(),'_##_')]</element_locator_value>
+           <!-- <element_locator_value>//div[@class='expuprightpanel']//table[@class='products']//following-sibling::tr[@id='_##_']/td[contains(text(),'_##_')]</element_locator_value>-->
+        </selector>
+
+
+        <!--Rules - Exception page product assert-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>PRODUCT SUPC</keyword>
+            <element_locator_value> //table[@class='productrules']//span[@class='detailvalue' and contains(text(),'_##_')]</element_locator_value>
+        </selector>
+
+
+
+
+    </Element>
+
+
+
+
+
+</UIElements>

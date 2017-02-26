@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>CLUSTER NAME</keyword>
+            <element_locator_value>clusterName</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>DISCOUNT FROM</keyword>
+            <element_locator_value>discountPercentFrom</element_locator_value>
+        </selector>
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>DISCOUNT TO</keyword>
+            <element_locator_value>discountPercentTo</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>PRICE FROM</keyword>
+            <element_locator_value>priceFrom</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>PRICE TO</keyword>
+            <element_locator_value>priceTo</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>RATING FROM</keyword>
+            <element_locator_value>sellerRatingFrom</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>RATING TO</keyword>
+            <element_locator_value>sellerRatingTo</element_locator_value>
+        </selector>
+
+
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CM RULES</keyword>
+            <element_locator_value> //table[@class='clusterrules']/tbody/tr[2]/td[@class='CM']/input[@type='number']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>GM RULES</keyword>
+            <element_locator_value> //table[@class='clusterrules']/tbody/tr[2]/td[@class='GM']/input[@type='number']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>COMPETITOR DIFFERENCE</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody/tr[2]/td[@class='CD']/input[@type='number']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MAX DIFFERENCE</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody/tr[2]/td[@class='MD']/input[@type='number']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CM RULE NO COMPETITOR</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody/tr[2]/td[@class='NC']/input[@type='number']</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>GM RULE NO COMPETITOR</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody/tr[2]/td[@class='NCGM']/input[@type='number']</element_locator_value>
+        </selector>
+
+<!--need to parameterize the below xpath for all the values-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CLUSTER CONSTRAINS</keyword>
+            <element_locator_value>//table[@class='clusterrules']//th[contains(text(),'_###_')]/parent::tr/td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+
+        <!--//table[@class='clusterrules']//th[contains(text(),'Cluster001')]/parent::tr/td[@class='CM']/input-->
+
+
+
+
+    </Element>
+
+    <Element type="combo">
+<!--Locator for selecting Brand Type as All or Selective from dropdown-->
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>BRANDTYPE</keyword>
+            <element_locator_value>brandType</element_locator_value>
+        </selector>
+<!--Locator for selecting Seller type as All or Selective from dropdown-->
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>SELLERTYPE</keyword>
+            <element_locator_value>sellerType</element_locator_value>
+        </selector>
+
+<!--locator SUPC upload drop down-->
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>SUPCTYPE</keyword>
+            <element_locator_value>selectSupcType</element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CREATE CLUSTER</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/createclusters.action' and contains(text(),'Create Cluster')]</element_locator_value>
+        </selector>
+
+
+        <!--MANAGE CLUSTER fULFILLMENT TYPE -->
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>FMTYPE</keyword>
+            <element_locator_value>fulfillmentType</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>CREATE CLUSTER BUTTON</keyword>
+            <element_locator_value>createClusterButton</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DELETE CLUSTER</keyword>
+            <element_locator_value>//span [@class='button button_pink delete' and contains(text(),'X')]</element_locator_value>
+        </selector>
+
+        <!--Rules - Cluster page tab xpath-->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>RULES CLUSTER</keyword>
+            <element_locator_value>//li[@rel='clustertab']</element_locator_value>
+        </selector>
+
+        <!--Rules - Cluster page Rule Update-->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPDATE CLUSTER RULE</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody//th[text()='_##_']/following-sibling::td/span[@class='button button_red updatecluster']</element_locator_value>
+        </selector>
+
+        <!--Rules - Cluster page Rule delete-->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DELETE CLUSTER RULE</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody//th[text()='_##_']/following-sibling::td/span[@class='button button_red deletecluster']</element_locator_value>
+        </selector>
+
+
+        <!--Create Cluster page - Choose file button -->
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>CHOOSEFILE</keyword>
+            <element_locator_value>chooseFile</element_locator_value>
+        </selector>
+
+        <!--Create Cluster page - Choose file button -->
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>UPDATE</keyword>
+            <element_locator_value>chooseFile</element_locator_value>
+        </selector>
+
+
+
+    </Element>
+
+    <Element type="text">
+
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CLUSTER TEXT</keyword>
+            <element_locator_value>//h2[contains(text(),'_##_')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <!--Rules - Verifying the name of Cluster in Rules Page -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CLUSTER RULE CREATED</keyword>
+            <element_locator_value>//table[@class='clusterrules']/tbody//tr/th[contains(text(),'_##_')]</element_locator_value>
+        </selector>
+
+
+    </Element>
+
+</UIElements>

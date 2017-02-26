@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aerospike="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/data/
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+<bean id="aeroSpikeTemplate" class="org.springframework.data.aerospike.core.AerospikeTemplate">
+    <constructor-arg>
+        <bean class="com.aerospike.client.AerospikeClient">
+            <constructor-arg value="policy" />
+            <constructor-arg value="localhost" />
+            <constructor-arg value="3000" />
+        </bean>
+    </constructor-arg>
+    <constructor-arg value="database" />
+</bean>
+
+<aerospike:repositories base-package="com.acme.repository" />

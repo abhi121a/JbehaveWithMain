@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- Data Source details needed for MySql -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="${jdbc.url}:${mySql.port}/${mySql.db}" />
+        <property name="username" value="${mySql.userName}" />
+        <property name="password" value="${mySql.password}" />
+    </bean>
+
+    <!-- Pass DataSource as parameter to the MySql Class -->
+    <bean id="mySqlActionsPublic" class="org.testing.framework.backend.Databases.mySql.MySqlActions">
+        <constructor-arg index="0" ref="dataSource"/>
+    </bean>
+
+    <!-- bean id="mySqlConnOverSSH" class="org.testing.framework.backend.Databases.mySql.MySqlConnectionOverSSH">
+        <property name="sshUser" value="${ssh.user}" />
+        <property name="sshHost" value="${ssh.host}" />
+        <property name="sshPort" value="${ssh.port}" />
+        <property name="sshIdentity" value="${ssh.identity}" />
+        <property name="localPort" value="${ssh.localPort}" />
+        <property name="remotePort" value="${ssh.remotePort}" />
+        <property name="remoteHost" value="${mySql.remoteHost}" />
+    </bean-->
+
+    <!-- bean id="mySqlActionsOverSSH" class="org.testing.framework.backend.Databases.mySql.MySqlActions">
+        <constructor-arg index="0" ref="dataSource"/>
+        <constructor-arg index="1" ref="mySqlConnOverSSH"/>
+    </bean-->
+
+    <!-- Specify all the mySql queries in bean format below -->
+    <bean id="selectAllFromNavigationBucket" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="select * from navigation_bucket limit 1"/>
+    </bean>
+
+    <bean id="selectAllFromProduct" class="org.testing.framework.model.DBModels.MySqlModel"><property name="query" value="select * from product limit 1"/>
+    </bean>
+
+    <bean id="selectRulesException" class="org.testing.framework.model.DBModels.MySqlModel">
+    <property name="query" value="select * from limit_exception"/>
+    </bean>
+
+    <bean id="selectRulesBrands" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * FROM limit_brand"/>
+    </bean>
+
+    <bean id="selectRulesCluster" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * FROM limit_cluster"/>
+    </bean>
+
+    <bean id="selectRulesSubCategory" class="org.testing.framework.model.DBModels.MySqlModel">
+    <property name="query" value="SELECT * FROM limit_subcategory"/>
+    </bean>
+
+
+    <bean id="updateExternalTimePsgroup" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="UPDATE cashback_automation.ps_group pg SET pg.external_update_time=NOW() WHERE pg.GroupId='$$$' and pg.pg.SubcategoryId='$$$'"/>
+    </bean>
+    <bean id="updateExternalTimePUI" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="UPDATE cashback_automation.ps_user_input pui SET pui.external_factor_update_time=NOW() WHERE pui.GroupId='$$$'"/>
+    </bean>
+
+    <bean id="selectAllFromPSGroupBeforeCashback" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * FROM cashback_automation.ps_group where SubcategoryId='$$$' and process_update_time=(SELECT max(process_update_time) FROM cashback_automation.ps_group where SubcategoryId='$$$');"/>
+    </bean>
+
+    <bean id="selectAllFromPSUserInputBeforeCashback" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * from cashback_automation.ps_user_input where groupID='$$$' and Status='-1'"/>
+    </bean>
+
+    <bean id="selectAllFromPSActiveSubcat" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * from cashback_automation.ps_active_subcats where SubcategoryId='$$$';"/>
+    </bean>
+
+    <bean id="selectAllFromPSGroup" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="select * from cashback_automation.ps_group where SubcategoryId='$$$' order by GroupId desc ;"/>
+    </bean>
+
+    <bean id="selectFromPSUserInputforSUPC" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * from cashback_automation.ps_user_input where SUPC='$$$'"/>
+    </bean>
+
+    <bean id="selectFromPsMOPList" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="select * from cashback_automation.ps_mop_list where supc='$$$'"/>
+    </bean>
+
+    <bean id="categoryListForEmail" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT DISTINCT c.category_id, c.subcategory_id, c.category_name, c.subcategory_name, IFNULL(ac.status,0) AS 'status'
+FROM user_cat_subcat_mapping u JOIN subcategory_info.category c ON c.subcategory_id = u.subcategory_id
+LEFT JOIN ps_active_subcats ac ON ac.SubcategoryId = c.subcategory_id WHERE u.user_email = 'abhishek.verma02@snapdeal.com' ORDER BY 3, IFNULL(c.rank,10000)"/>
+    </bean>
+
+    <bean id="categoryForSupc" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT pcpm.product_category_id,pr.name,pc.name,pc.parent_category_id FROM cams.product pr, cams.product_category_product_mapping pcpm,
+         cams.product_category pc WHERE pr.id=pcpm.product_id AND pcpm.product_category_id=pc.id AND pr.supc='$$$'"/>
+    </bean>
+    <bean id="currentrecordinBatchCbSeller" class="org.testing.framework.model.DBModels.MySqlModel">
+        <property name="query" value="SELECT * FROM batch_cb_sellers WHERE supc = '$$$' AND process_ID = (SELECT process_ID FROM batch_cb_sellers WHERE supc ='$$$' ORDER BY process_ID DESC LIMIT 1)
+"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>BRANDINPUTVALUES</keyword>
+            <element_locator_value>//table[@class='brandrules']//th/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+
+
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+        <element_locator_type>xpath</element_locator_type>
+        <keyword>BRAND_ADD</keyword>
+        <element_locator_value>//span[@class='button button_blue addbrand' and contains(text(),'Add')]</element_locator_value>
+    </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELECT_BRAND</keyword>
+            <element_locator_value>//table[@class='brandrules']/tbody//option[contains(text(),'Reado')]</element_locator_value>
+        </selector>
+
+
+
+
+
+
+
+
+
+
+
+    </Element>
+
+    <Element type="text">
+
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+</UIElements>

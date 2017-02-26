@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+        <selector>
+            <keyword>UserName</keyword>
+            <element_locator_type>id</element_locator_type>
+            <element_locator_value>j_username</element_locator_value>
+        </selector>
+        
+        <selector>
+            <keyword>Password</keyword>
+            <element_locator_type>name</element_locator_type>
+            <element_locator_value>j_password</element_locator_value>
+        </selector>
+        
+    </Element>
+
+    <Element type="combo">
+    
+    </Element>
+
+    <Element type="click">
+        <selector>
+            <keyword>SignIn</keyword>
+            <element_locator_type>xpath</element_locator_type>
+            <element_locator_value>//input[@class="button" and contains(text(),Sign)]</element_locator_value>
+        </selector>
+    	
+    </Element>
+
+    <Element type="text">
+
+    </Element>
+    	
+</UIElements>

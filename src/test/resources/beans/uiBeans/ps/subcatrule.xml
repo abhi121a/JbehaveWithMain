@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>OVERALL_INPUTS</keyword>
+            <element_locator_value>//div[@id='overalltable']//tr[@class='rule']/td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING_PRICE_BELOW_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='sellingpricetable']//th[@class='filter first']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING_PRICE_TILL_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='sellingpricetable']//th[@class='filter second']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING_PRICE_ABOVE_INPUTS</keyword>
+            <element_locator_value>//div[@id='sellingpricetable']//th[@class='filter']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY_BELOW_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popularitytable']//th[@class='filter first']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY_TILL_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popularitytable']//th[@class='filter second']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY_ABOVE_INPUTS</keyword>
+            <element_locator_value>//div[@id='popularitytable']//th[@class='filter']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_SP_BELOW_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']/parent::tr/following-sibling::tr/th[@class='filter first']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_SP_TILL_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']/parent::tr/following-sibling::tr[2]/th[@class='filter second']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_SP_ABOVE_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']/parent::tr/following-sibling::tr[3]/th[@class='filter']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_SP_BELOW_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']/parent::tr/following-sibling::tr/th[@class='filter first']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_SP_TILL_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']/parent::tr/following-sibling::tr[2]/th[@class='filter second']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_SP_ABOVE_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']/parent::tr/following-sibling::tr[3]/th[@class='filter']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_ABOVE_SP_BELOW_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter']/parent::tr/following-sibling::tr/th[@class='filter first']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_ABOVE_SP_TILL_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter']/parent::tr/following-sibling::tr[2]/th[@class='filter second']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_ABOVE_SP_ABOVE_LIMIT_INPUTS</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter']/parent::tr/following-sibling::tr[3]/th[@class='filter']/following-sibling::td[@class='_##_']/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CHECKBOX</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr['_##_']/td/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>HeadCheckbox</keyword>
+            <element_locator_value>.//*[@id='dataTables-example']/thead//input</element_locator_value>
+        </selector>
+
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING_PRICE_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='sellingpricetable']//th[@class='filter first']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING_PRICE_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='sellingpricetable']//th[@class='filter second']</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='popularitytable']//th[@class='filter first']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='popularitytable']//th[@class='filter second']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_SP_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']/parent::tr/following-sibling::tr/th[@class='filter first']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_BELOW_SP_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainfirst']/parent::tr/following-sibling::tr/th[@class='filter second']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_SP_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']/parent::tr/following-sibling::tr/th[@class='filter first']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_TILL_SP_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter mainsecond']/parent::tr/following-sibling::tr/th[@class='filter second']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_ABOVE_SP_BELOW_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter']/parent::tr/following-sibling::tr/th[@class='filter first']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SPXPOPULARITY_ABOVE_SP_TILL_LIMIT</keyword>
+            <element_locator_value>//div[@id='popxselltable']//th[@class='nobg mainfilter']/parent::tr/following-sibling::tr/th[@class='filter second']</element_locator_value>
+        </selector>
+
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>OVERALL</keyword>
+            <element_locator_value>//span[text()='Overall']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SELLING PRICE</keyword>
+            <element_locator_value>//span[text()='Selling Price']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPULARITY</keyword>
+            <element_locator_value>//span[text()='Popularity']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>POPYLARITY X SELLING PRICE</keyword>
+            <element_locator_value>//span[text()='Popularity X Selling Price']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>EXCEPTIONS</keyword>
+            <element_locator_value>//span[contains(text(),'Exceptions')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CLUSTERS</keyword>
+            <element_locator_value>//span[contains(text(),'Clusters')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>BRANDS</keyword>
+            <element_locator_value>//span[contains(text(),'Brands')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SUBCATEGORY</keyword>
+            <element_locator_value>//span[contains(text(),'Sub-Category')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPDATE</keyword>
+            <element_locator_value>//span[text()='Update'][@class='button button_red updatesubcat']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>VIEW SUMMARY BUTTON</keyword>
+            <element_locator_value>//a[text()='View Summary']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>PROCESS</keyword>
+            <element_locator_value>//span[text()='Process'][@class='button button_red processesubcat']</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ENABLE</keyword>
+            <element_locator_value>//span[text()='_##_']/parent::div/label/div</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DISABLE</keyword>
+            <element_locator_value>//span[text()='_##_']/parent::div/label/div</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>BROWSE</keyword>
+            <element_locator_value>//input[@class='button button_grey browse']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPLOAD</keyword>
+            <element_locator_value>//input[@class='button button_green savetemp']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DELETE</keyword>
+            <element_locator_value>//tr[@id='_##_']/td/span[@class='button button_white delete']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CHECKBOX</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr['_##_']/td/input</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>APPLYALL</keyword>
+            <element_locator_value>applyAllCashback</element_locator_value>
+        </selector>
+        <!--<selector>-->
+        <!--<element_locator_type>id</element_locator_type>-->
+        <!--<keyword>SUBMIT BUTTON</keyword>-->
+        <!--<element_locator_value>submitbutton</element_locator_value>-->
+        <!--</selector>-->
+
+
+    </Element>
+
+    <Element type="text">
+
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>VIEWSUMMARYTABLE</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>VIEWSUMMARYROWIDENTIFIER</keyword>
+            <element_locator_value>.//tr</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>UPDATION_CONFIRMATION_MSG</keyword>
+            <element_locator_value>//span[text()='Updated!']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>PROCESS_CONFIRMATION_MSG</keyword>
+            <element_locator_value>//span[text()='Request Accepted!']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX1</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[1]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX2</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[2]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX3</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[3]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX4</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[4]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX5</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[5]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX6</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[6]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX7</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[7]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX8</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[8]/td[5]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ROWINDEX9</keyword>
+            <element_locator_value>//table[@id='dataTables-example']/tbody/tr[9]/td[5]</element_locator_value>
+        </selector>
+
+
+
+    </Element>
+
+</UIElements>

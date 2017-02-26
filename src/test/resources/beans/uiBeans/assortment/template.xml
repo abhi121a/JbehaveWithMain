@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+	<Element type="input">
+	    
+		<selector>
+			<element_locator_type>id</element_locator_type>
+			<keyword></keyword>
+			<element_locator_value></element_locator_value>
+		</selector>
+																											
+	</Element>
+	
+	<Element type="combo">
+	
+		<selector>
+			<element_locator_type>xpath</element_locator_type>
+			<keyword></keyword>
+			<element_locator_value></element_locator_value>
+		</selector>
+		
+	</Element>
+	
+	<Element type="click">
+
+		<selector>
+			<element_locator_type>className</element_locator_type>
+			<keyword></keyword>
+			<element_locator_value></element_locator_value>
+		</selector>
+																													
+	</Element>
+
+	<Element type="text">	
+			
+		<selector>
+			<element_locator_type>css</element_locator_type>
+			<keyword></keyword>
+			<element_locator_value></element_locator_value>
+		</selector>	
+									
+	</Element>
+
+</UIElements>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>className</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>KEYWORDANDCONVERSION</keyword>
+            <element_locator_value>//a[@href='#keywordAndConversion']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>NULLSEARCH</keyword>
+            <element_locator_value>//a[@href='#nullSearch']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MAPPINGPANEL</keyword>
+            <element_locator_value>//a[@href='#mappingPanel']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>BRANDGAPREPORT</keyword>
+            <element_locator_value>//a[@href='#brandGapReport']</element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="text">
+
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+</UIElements>

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>FINDNOOFSUBCAT</keyword>
+            <element_locator_value>//ul[@class='categoryfilter']/li</element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+           <element_locator_type>xpath</element_locator_type>
+            <keyword>PRICE RULES</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/rules.action' and contains(text(),'Pricing')]</element_locator_value>
+        </selector>
+
+      <!--  <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>PRICE RULES</keyword>
+            <element_locator_value>//li[@id='rules']/a[text()='Pricing Rules']</element_locator_value>
+        </selector> -->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>VIEW SUMMARY TEXT</keyword>
+            <element_locator_value>//li[@id='viewSummary']/a[text()=View Summary']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>PRODUCT CONFIGURATION</keyword>
+            <element_locator_value>//li[@id='exceptions']/a[text()='Product Configuration']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>OVERALL</keyword>
+            <element_locator_value>//span[text()='Overall']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CATEGORY</keyword>
+            <element_locator_value>//span[@class='name' and contains(text(),'_##_')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SUBCATEGORY</keyword>
+            <element_locator_value>//span[text()='_##_']</element_locator_value>
+        </selector>
+
+<!-- below locator is hard coded for women handbags only-->
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ENABLE</keyword>
+            <element_locator_value>//span[text()='Womens Handbags']/parent::div/label/div</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>DISABLE</keyword>
+            <element_locator_value>//span[text()='Womens Handbags']/parent::div/label/div</element_locator_value>
+        </selector>
+
+<!-- Product config defined again-->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+        <keyword>PRODUCT CONFIG</keyword>
+        <element_locator_value>//a[@href='#' and contains(text(),'Configuration')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MANAGE PRODUCT</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/product.action']</element_locator_value>
+        </selector>
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MANAGE CLUSTER</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/clusters.action' and contains(text(),'Clusters')]</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SET MOP</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/mop.action']</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SET RFS</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/removeproduct.action']</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>EMAIL ID</keyword>
+            <element_locator_value>//*[@id='logout']/a</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>LOGOUT</keyword>
+            <element_locator_value>//*[@id='logout']/ul/li/a</element_locator_value>
+        </selector>
+
+        <!--Select the subcat according to li no.-->
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SUBCATEGORYLI</keyword>
+            <element_locator_value>//span[@class='name' and contains(text(),'_##_')]/following-sibling::ul/li[_###_]</element_locator_value>
+        </selector>
+
+
+
+
+
+        <!--Manage Subcat Click identifier-->
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>ManageSubcat</keyword>
+            <element_locator_value>//a[@href='/PriceSimulator/exceptions/manageSubcat.action' and contains(text(),'Manage')]</element_locator_value>
+        </selector>
+
+
+        <!--update button-->
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>Update</keyword>
+            <element_locator_value>//button[contains(text(),'Update')]</element_locator_value>
+        </selector>
+
+
+
+
+    </Element>
+
+    <Element type="text">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>CATEGORY</keyword>
+            <element_locator_value>//span[@class='name' and contains(text(),'_##_')]</element_locator_value>
+        </selector>
+
+    </Element>
+
+</UIElements>

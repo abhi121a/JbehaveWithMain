@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- Insert the db bean resources so that this context can use the db resources in the map -->
+	<import resource="classpath*:beans/dbBeans/mySql.xml" />
+	<import resource="classpath*:beans/dbBeans/mongoDB.xml" />
+
+
+	<!-- Create Map of all MySql Beans, so as one needed can be picked from the map -->
+	<!-- The same value will be referenced in the stories to access the bean -->
+	<util:map id="mySqlMap" value-type="org.testing.framework.model.DBModels.MySqlModel">
+		<entry key="SelectAllFromNavigationBucket" value-ref="selectAllFromNavigationBucket" />
+		<entry key="SelectAllFromProduct" value-ref="selectAllFromProduct" />
+		<entry key="SelectRulesException" value-ref="selectRulesException" />
+		<entry key="SelectRulesCluster" value-ref="selectRulesCluster" />
+		<entry key="SelectRulesBrands" value-ref="selectRulesBrands" />
+		<entry key="SelectRulesSubCategory" value-ref="selectRulesSubCategory" />
+		<entry key="UpdateExternalTimePsgroup" value-ref="updateExternalTimePsgroup" />
+		<entry key="UpdateExternalTimePUI" value-ref="updateExternalTimePUI" />
+		<entry key="SelectAllFromPSGroup" value-ref="selectAllFromPSGroup" />
+		<entry key="SelectAllFromPSGroupBeforeCashback" value-ref="selectAllFromPSGroupBeforeCashback" />
+		<entry key="SelectAllFromPSUserInputBeforeCashback" value-ref="selectAllFromPSUserInputBeforeCashback" />
+		<entry key="SelectAllFromPSActiveSubcat" value-ref="selectAllFromPSActiveSubcat" />
+		<entry key="SelectFromPSUserInputforSUPC" value-ref="selectFromPSUserInputforSUPC" />
+		<entry key="CategoryListForEmail" value-ref="categoryListForEmail" />
+		<entry key="SelectFromPsMOPList" value-ref="selectFromPsMOPList"/>
+		<entry key="CategoryForSupc" value-ref="categoryForSupc"/>
+		<entry key="CurrentrecordinBatchCbSeller" value-ref="currentrecordinBatchCbSeller"/>
+
+
+	</util:map>
+
+	<!-- Create Map of all MongoDB Beans, so as one needed can be picked from the map -->
+	<!-- The same value will be referenced in the stories to access the bean -->
+	<util:map id="mongoDBMap" value-type="org.testing.framework.model.DBModels.MongoDBModel">
+		<entry key="ProductForSUPC" value-ref="productForSUPC" />
+	</util:map>
+
+</beans>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+<Element type="input">
+
+    <selector>
+        <element_locator_type>name</element_locator_type>
+        <keyword>USERNAME</keyword>
+        <element_locator_value>email</element_locator_value>
+    </selector>
+
+    <selector>
+        <element_locator_type>name</element_locator_type>
+        <keyword>PASSWORD</keyword>
+        <element_locator_value>password</element_locator_value>
+    </selector>
+
+
+    // need to remove this
+    <selector>
+        <element_locator_type>xpath</element_locator_type>
+        <keyword>EXCEPTION TEXT AREA</keyword>
+        <element_locator_value>//textarea[@class="manualinput"]</element_locator_value>
+    </selector>
+
+
+</Element>
+
+<Element type="combo">
+
+    <selector>
+        <element_locator_type>xpath</element_locator_type>
+        <keyword></keyword>
+        <element_locator_value></element_locator_value>
+    </selector>
+
+</Element>
+
+<Element type="click">
+
+    <selector>
+        <element_locator_type>id</element_locator_type>
+        <keyword>SUBMIT BUTTON</keyword>
+        <element_locator_value>submitbutton</element_locator_value>
+    </selector>
+
+
+</Element>
+
+<Element type="text">
+
+    <selector>
+        <element_locator_type>xpath</element_locator_type>
+        <keyword>EMAIL</keyword>
+        <element_locator_value>//a[contains(text(),'_##_')]</element_locator_value>
+    </selector>
+    <selector>
+        <element_locator_type>xpath</element_locator_type>
+        <keyword>ERROR MSG</keyword>
+        <element_locator_value>//div[@id='error' and contains(text(),'Wrong E-mail Address or Password')]</element_locator_value>
+    </selector>
+
+</Element>
+
+</UIElements>

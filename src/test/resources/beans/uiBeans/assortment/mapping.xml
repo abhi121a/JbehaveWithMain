@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<UIElements>
+
+    <Element type="input">
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>USERNAME</keyword>
+            <element_locator_value>inputEmail</element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>id</element_locator_type>
+            <keyword>PASSWORD</keyword>
+            <element_locator_value>inputPassword</element_locator_value>
+        </selector>
+
+
+    </Element>
+
+    <Element type="combo">
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+        se
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SDSUBCAT</keyword>
+            <element_locator_value>//select[@class='form-control pull-right ng-valid ng-touched ng-dirty ng-valid-parse']</element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="click">
+
+        <selector>
+            <element_locator_type>className</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>SEARCHBUTTON</keyword>
+            <element_locator_value>//button[@class='btn btn-success'][text()='Search']</element_locator_value>
+        </selector>
+
+    </Element>
+
+    <Element type="text">
+
+        <selector>
+            <element_locator_type>css</element_locator_type>
+            <keyword></keyword>
+            <element_locator_value></element_locator_value>
+        </selector>
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MAPPINGTABLE</keyword>
+            <element_locator_value>//table[@class='table table-bordered table-striped']/tbody</element_locator_value>
+        </selector>
+
+
+        <selector>
+            <element_locator_type>xpath</element_locator_type>
+            <keyword>MAPPINGPANEL</keyword>
+            <element_locator_value>//a[@href='#mappingPanel']</element_locator_value>
+        </selector>
+
+
+    </Element>
+
+</UIElements>
